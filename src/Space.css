@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar{
+	display: none;
+	}
+	.space{
+		background-color: #8080804a;
+	}
+	.space h1 {
+		font-size: 1rem;
+	}
+	.space .photos{
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: 10px;
+
+	}
+	.photos img{
+		/*display: flex;
+		height: 90px;
+		margin: 10px;
+		width: 75px;
+		transition: all .5s;*/
+		height: 100%;
+		width: 100%;
+	}
+	.card .image{
+		width: 60%;
+		padding: 1rem 0.5rem;
+		background: #8080804a;
+    	margin: 10px 0;
+    	border-radius: 25px;
+	}
+	.main{
+		display: flex;
+	}
+	.details{
+		background-color: #fff;
+		height: 100vh;
+		position: fixed;
+		padding: 0 30px;
+		width: 20%;
+	}
+	.photos{
+		width: 80%;
+		margin-left: 20%;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+	}
+	.card{
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+		background-color: #fff;
+		margin: 20px;
+	}
+	.launch{
+		width: 80%;
+		padding: 10px;
+	}
+	.launch p{
+	margin:	5px 0;
+	font-weight: 900;
+	}
+	/*.card .image{
+		margin: 10px 30px;
+		width: 15%;
+	}*/
+
+	.details li{
+		margin: 5px 10px;
+		padding: 5px;
+	}
+	.space h1:first-of-type{
+		width: 100%;
+	}
+	.launch{
+		display: inline-block;
+		background: white;
+		min-height: 115px;
+	}
+	@media all and (max-width:1250px){
+		.card {
+			width: 25%;
+		}	
+	}
+	@media all and (max-width:1170px){
+		.card {
+			width: 27%;
+		}	
+	}
+	@media all and (max-width:1080px){
+		.card {
+			width: 39%;
+		}	
+		.photos{
+			width: 70%;
+			margin-left: 35%;
+		}
+		.details{
+			width:25%;
+		}
+	}
+	@media all and (max-width:930px){
+		.card {
+			width: 43%;
+		}
+		.details {
+			width: 27%;
+		}
+		.photos {
+			margin-left: 33%;
+		}
+	}
+	@media all and (max-width:870px){
+		.card {
+			width: 48%;
+		}
+		.photos{
+			justify-content: center;
+			margin-left: 28%;
+		}
+		
+	}
+	@media all and (max-width:830px){
+		.details {
+			width: 31%;
+		}
+	}
+	@media all and (max-width:750px){
+		.details {
+			width: 35%;
+		}
+		.photos {
+			margin-left: 38%;
+		}
+		.card {
+			width: 65%;
+		}
+	}
+	@media all and (max-width:650px){
+		.details {
+			width: 39%;
+		}
+		.photos {
+			
+		}
+		.card {
+			
+		}
+		.details h1{
+			font-size: 1.5rem;
+		}
+		h2{
+			font-size: 1.3rem;
+		}
+	}
+	@media all and (max-width:570px){
+		.details {
+			width: 45%;
+		}
+		.main {
+			flex-wrap: wrap;
+			flex-direction: column;
+			
+		}
+		.photos {
+			width: 55%;
+		}
+	}
+	@media all and (max-width:510px){
+		.details{
+			position: relative;
+			height: auto;
+		}
+		.main{
+			align-items: center;
+		}
+		.photos{
+			margin-left: 0;
+		}
+		.card {
+			width: 82%;
+		}
+	}
